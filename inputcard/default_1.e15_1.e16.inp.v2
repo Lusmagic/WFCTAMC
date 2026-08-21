@@ -1,0 +1,89 @@
+#  Simulation_mode  ( FAST | NORMAL | ADVANCED )        
+SIMMODE   FAST
+#  Cherenkov photon with wavelength in CORSIKA simulation ( T | F )
+wavelength    T  1 
+#  With THIN option in CORSIKA simulation ( T | F )
+thin    T
+####  Information about telescope array： 
+#  Telescope number:    	
+ct_number    18      	
+#  ct position telx tely  telz  telzen telazi
+ct_position 0   -1225.4  515.8     0 45  40
+ct_position 1   -275.8   482.4     0 45  320
+ct_position 2   -1535.3  2597.7    0 45  100
+ct_position 3   -1878.4  3447.0    0 45  120
+ct_position 4   -1130.7  1873.4    0 45  80
+ct_position 5   -826.4   1186.2    0 45  60
+ct_position 6   1951.9   -3467.5   0 45  140
+ct_position 7   1317.8   -2949.0   0 45  160
+ct_position 8   -1591.0  -615.4    0 45  0
+ct_position 9   -493.6   -2826.9   0 45  220
+ct_position 10  823.9    -1649.1   0 45  260
+ct_position 11  12.0     -2132.3   0 45  240
+ct_position 12  352.3    -2719.4   0 45  200
+ct_position 13  1129.3   -2330.4   0 45  180
+ct_position 14  257.0    -1165.6   0 45  280
+ct_position 15  141.5    -216.3    0 45  300
+ct_position 16  -764.5   -324.3    0 45  340
+ct_position 17  -1958.1  72.8      0 45  20
+
+# Size of Telescope: length width
+mirror_size 500 500
+#  The simga of spot size caused by the roughness of the mirror (mm)
+mirror_spot   0 9
+mirror_spot   1 9
+mirror_spot   2 9
+mirror_spot   3 9
+mirror_spot   4 9
+mirror_spot   5 9
+mirror_spot   6 9
+mirror_spot   7 9
+mirror_spot   8 9
+mirror_spot   9 9
+mirror_spot   10 9
+mirror_spot   11 9
+mirror_spot   12 9
+mirror_spot   13 9
+mirror_spot   14 9
+mirror_spot   15 9
+mirror_spot   16 9
+mirror_spot   17 9
+#  The mirror geomtry of the telescope
+mirror_geomtry  1
+#  The Pointing error of each mirror ( Flag degree)
+mirror_pointerror F  0.5
+#  The option of the filter (T | F)
+filter    T
+# FADC settings 
+fadc_flag T
+fadc_bin 16
+fadc_bin_length 20
+
+# the option of nsb (T|F) (if T, the intensity of NSB is needed, 
+# if F, the fix trigger threshold is needed)
+nsb F 0 0.07 40 40  
+nsb F 1 0.07 40 40
+nsb F 2 0.07 40 40
+nsb F 3 0.07 40 40
+nsb F 4 0.07 40 40
+nsb F 5 0.07 40 40
+nsb F 6 0.07 40 40
+nsb F 7 0.07 40 40
+nsb F 8 0.07 40 40
+nsb F 9 0.07 40 40
+nsb F 10 0.07 40 40
+nsb F 11 0.07 40 40
+nsb F 12 0.07 40 40
+nsb F 13 0.07 40 40
+nsb F 14 0.07 40 40
+nsb F 15 0.07 40 40
+nsb F 16 0.07 40 40
+nsb F 17 0.07 40 40
+#fix trigger threshold is gotten by(700-darkbase/2)/7+(base/8)/7, (600-darkbase/2)/7+(base/8)/7
+#darkbase=346, base=400
+atmmodel 2 440000
+# 2 is for US standard, 3 is for Magic summer, 4 is for Magic winter
+# 440000 is for the altitude (cm) of the observatory 
+
+# The ened of the inputcard 
+end_file

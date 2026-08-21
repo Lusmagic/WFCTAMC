@@ -1,0 +1,1 @@
+rootcint -f ../src/WFCTAMcEventDict.cc -c WFCTAMcEvent.h WFCTAMcEventLinkDef.h

@@ -1,0 +1,6 @@
+obj/
+WFCTA-MC
+ParallelLightTest
+EventShow
+*.o
+*.so
